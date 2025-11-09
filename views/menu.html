@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <!-- Basic -->
@@ -13,15 +13,18 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="../public/vendor/template/images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Pasteleria Turroncito </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="../public/vendor/template/css/bootstrap.css" />
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- nice select  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
   <!-- font awesome style -->
   <link href="../public/vendor/template/css/font-awesome.min.css" rel="stylesheet" />
 
@@ -29,6 +32,8 @@
   <link href="../public/vendor/template/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="../public/vendor/template/css/responsive.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../public/css/estilos.css">
 
 </head>
 
@@ -44,11 +49,12 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="../index.html">
             <span>
-              Feane
+              Pasteleria Turroncito
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
@@ -58,13 +64,13 @@
                 <a class="nav-link" href="../index.html">Home </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="./menu.html">Menu <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="./menu.html">Menu <span class="sr-only">Actual</span> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="./about.html">SOBRE NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./book.html">Book Table</a>
+                <a class="nav-link" href="./book.html">RESERVACIÓN</a>
               </li>
             </ul>
             <div class="user_option">
@@ -72,7 +78,9 @@
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <a class="cart_link" href="#">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                  style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
                       <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -131,7 +139,7 @@
                 </button>
               </form>
               <a href="" class="order_online">
-                Order Online
+                ORDEN EN LÍNEA
               </a>
             </div>
           </div>
@@ -147,16 +155,16 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Our Menu
+          NUESTRO MENÚ
         </h2>
       </div>
 
       <ul class="filters_menu">
-        <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
+        <li class="active" data-filter="*">TODOS</li>
+        <li data-filter=".burger">PASTELES</li>
+        <li data-filter=".pizza">CHEESECAKE</li>
+        <li data-filter=".pasta">PAN</li>
+        <li data-filter=".fries">BROWNIES</li>
       </ul>
 
       <div class="filters-content">
@@ -165,21 +173,30 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f1.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/cheesecake1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pizza
+                    Cheesecake de Chocolate Silvestre Premium
                   </h5>
-                  <p>
+                  <!-- <p>
                     Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p> -->
+
+                  <p>
+                    Nuestro cheesecake estrella, elaborado con una base crujiente de galleta y una cremosa capa de queso
+                    Philadelphia. Una combinación perfecta de texturas y sabores que te enamorará en cada bocado.
                   </p>
+
+
                   <div class="options">
                     <h6>
                       $20
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -196,7 +213,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -241,21 +259,27 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f2.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/pastel1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Burger
+                    Pastel Elegancia Floral
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Nuestro pastel de eventos por excelencia. Con una estructura de tres pisos, acabado en blanco puro
+                    y adornado con flores frescas en tonos rosados. Cada capa es una experiencia de sabor y textura.
+                    Ideal para bodas, compromisos y celebraciones memorables.
                   </p>
+
+
                   <div class="options">
                     <h6>
-                      $15
+                      $45
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -272,7 +296,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -317,21 +342,25 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f3.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/cheesecake2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pizza
+                    Cheesecake Frutos Rojos Gourmet
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Una verdadera joya culinaria. Nuestro cheesecake combina una base crujiente de galleta con una capa de queso cremoso Philadelphia, coronada con una brillante gelatina de frutos rojos
+                    y arándanos y fresas. Cada bocado es una explosión de sabor.
                   </p>
+
                   <div class="options">
                     <h6>
-                      $17
+                      $25
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -348,7 +377,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -393,21 +423,24 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f4.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/pan1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
                     Delicious Pasta
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $18
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -424,7 +457,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -469,21 +503,24 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f5.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/brownie1.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
                     French Fries
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $10
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -500,7 +537,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -545,21 +583,24 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f6.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/cheesecake3.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
                     Delicious Pizza
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $15
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -576,7 +617,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -621,21 +663,24 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f7.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/pastel2.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
                     Tasty Burger
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $12
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -652,7 +697,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -697,21 +743,24 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f8.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/pastel3.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
                     Tasty Burger
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $14
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -728,7 +777,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -773,21 +823,24 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../public/vendor/template/images/f9.png" alt="">
+                  <img class="imagenes_menu" src="../public/img/pan2.jpg" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
                     Delicious Pasta
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $10
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -804,7 +857,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -849,7 +903,7 @@
       </div>
       <div class="btn-box">
         <a href="">
-          View More
+          Ver mas
         </a>
       </div>
     </div>
@@ -864,25 +918,25 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Contactanos
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Ubicacion: Quito, Ecuador, Jardin del Valle
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Llama al +593 995857667
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  josefernando60@gmail.com
                 </span>
               </a>
             </div>
@@ -891,10 +945,12 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Sabor del Alma
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Emprendimiento dedicado a la elaboración de productos de panadería y repostería artesanal, utilizando
+              ingredientes naturales y técnicas ancestrales, con el objetivo de ofrecer sabores auténticos que conecten
+              con las raíces culturales y promuevan el bienestar.
             </p>
             <div class="footer_social">
               <a href="">
@@ -917,10 +973,10 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Hora de apertura
           </h4>
           <p>
-            Everyday
+            Todos los dias
           </p>
           <p>
             10.00 Am -10.00 Pm
@@ -929,9 +985,9 @@
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
+          &copy; <span id="displayYear"></span> Derechos reservados para
+          <a href="https://html.design/">Plantillas gratis</a><br><br>
+          &copy; <span id="displayYear"></span>Distribuidos por
           <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
         </p>
       </div>
@@ -942,8 +998,9 @@
   <!-- jQery -->
   <script src="../public/vendor/template/js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script src="../public/vendor/template/js/bootstrap.js"></script>
   <!-- owl slider -->

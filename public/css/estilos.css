@@ -1,0 +1,69 @@
+.Fondo1 {
+  max-width: 10000px;
+  width: 10px;
+  height: 10px;
+  aspect-ratio: 16/9;
+  float: right;
+  filter: brightness(0.45) contrast(1.2) saturate(1.1);
+
+}
+
+.order_online {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.parrafo{
+    color: black;
+}
+
+.titulo-banner {
+  animation: derretimiento 3s infinite alternate;
+}
+
+
+body {
+  background-color: #a9957b; /* Base crema rosado */
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.parrafo_suave {
+  color: #ffffff;
+}
+
+.parrafo_fuerte {
+  color: #FFD700;
+}
+
+.texto-testimonio {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  border-radius: 55px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes_menu {
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .tarjetita{
+    background-color: rgb(213, 203, 203);
+    border-radius: 15px;
+     padding: 20px; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} */

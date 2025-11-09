@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <!-- Basic -->
@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="../public/vendor/template/images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Pasteleria Turroncito </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="../public/vendor/template/css/bootstrap.css" />
@@ -30,6 +30,8 @@
   <!-- responsive style -->
   <link href="../public/vendor/template/css/responsive.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="../public/css/estilos.css">
+
 </head>
 
 <body class="sub_page">
@@ -44,7 +46,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="../index.html">
             <span>
-              Feane
+              Pasteleria Turroncito
             </span>
           </a>
 
@@ -61,10 +63,10 @@
                 <a class="nav-link" href="./menu.html">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="./about.html">SOBRE NOSOTROS</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="./book.html">Book Table <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="./book.html"> RESERVACIóN  <span class="sr-only">Actual</span> </a>
               </li>
             </ul>
             <div class="user_option">
@@ -131,7 +133,7 @@
                 </button>
               </form>
               <a href="" class="order_online">
-                Order Online
+                ORDEN EN LÍNEA
               </a>
             </div>
           </div>
@@ -146,7 +148,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+          Reservación
         </h2>
       </div>
       <div class="row">
@@ -154,29 +156,32 @@
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" class="form-control" placeholder="Tu nombre" />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" class="form-control" placeholder="Número de telefono" />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
+                <input type="email" class="form-control" placeholder="Correo" />
               </div>
               <div>
                 <select class="form-control nice-select wide">
                   <option value="" disabled selected>
-                    How many persons?
+                    ¿Cuántas personas son?
                   </option>
-                  <option value="">
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
                     2
                   </option>
-                  <option value="">
+                  <option value="3">
                     3
                   </option>
-                  <option value="">
+                  <option value="4">
                     4
                   </option>
-                  <option value="">
+                  <option value="5">
                     5
                   </option>
                 </select>
@@ -186,7 +191,7 @@
               </div>
               <div class="btn_box">
                 <button>
-                  Book Now
+                  Reserva ahora
                 </button>
               </div>
             </form>
@@ -209,25 +214,25 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Contactanos
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Ubicacion: Quito, Ecuador, Jardin del Valle
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Llama al +593 995857667
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  josefernando60@gmail.com
                 </span>
               </a>
             </div>
@@ -236,10 +241,12 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Sabor del Alma
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Emprendimiento dedicado a la elaboración de productos de panadería y repostería artesanal, utilizando
+              ingredientes naturales y técnicas ancestrales, con el objetivo de ofrecer sabores auténticos que conecten
+              con las raíces culturales y promuevan el bienestar.
             </p>
             <div class="footer_social">
               <a href="">
@@ -262,21 +269,21 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Hora de apertura
           </h4>
           <p>
-            Everyday
+            Todos los dias
           </p>
           <p>
-            10.00 Am -10.00 Pm
+            10.00 Am - 10.00 Pm
           </p>
         </div>
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
+          &copy; <span id="displayYear"></span> Derechos reservados para
+          <a href="https://html.design/">Plantillas gratis</a><br><br>
+          &copy; <span id="displayYear"></span>Distribuidos por
           <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
         </p>
       </div>
@@ -305,6 +312,45 @@
   </script>
   <!-- End Google Map -->
 
+  <script>
+// CAMBIA ESTAS COORDENADAS POR LAS TUYAS
+// Puedes obtenerlas en: https://www.google.com/maps
+const latitud = -0.2275;  // Latitud de tu ubicación
+const longitud = -78.4843; // Longitud de tu ubicación
+const nombreNegocio = "Mi Panadería"; // Nombre de tu negocio
+
+function initMap() {
+  const ubicacion = { lat: latitud, lng: longitud };
+
+  const mapa = new google.maps.Map(document.getElementById("googleMap"), {
+    zoom: 15,
+    center: ubicacion,
+    mapTypeControl: true,
+    fullscreenControl: true,
+    streetViewControl: true,
+  });
+
+  // Agregar marcador en tu ubicación
+  const marcador = new google.maps.Marker({
+    position: ubicacion,
+    map: mapa,
+    title: nombreNegocio,
+    icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png", // Marcador rojo
+  });
+
+  // Ventana de información al hacer clic en el marcador
+  const infoWindow = new google.maps.InfoWindow({
+    content: `<div style="color: #3e2723; font-weight: bold;">${nombreNegocio}</div>`,
+  });
+
+  marcador.addListener("click", () => {
+    infoWindow.open(mapa, marcador);
+  });
+}
+
+// Cargar el mapa cuando la página carga
+window.addEventListener("load", initMap);
+</script>
 </body>
 
 </html>

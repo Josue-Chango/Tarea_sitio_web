@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <!-- Basic -->
@@ -13,15 +13,18 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="./public/vendor/template/images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> Pasteleria Turroncito </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="./public/vendor/template/css/bootstrap.css" />
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- nice select  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
   <!-- font awesome style -->
   <link href="./public/vendor/template/css/font-awesome.min.css" rel="stylesheet" />
 
@@ -30,6 +33,34 @@
   <!-- responsive style -->
   <link href="./public/vendor/template/css/responsive.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="./public/css/estilos.css">
+
+  <!-- <style>
+    .Fondo1 {
+      margin-top: 100px;
+      margin-bottom: 100px;;
+    }
+  </style> -->
+
+  <!-- <style>
+    body {
+      background-color: #ffd8c5;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 40vh;
+      background: #FFDAC5;
+      /* Capa intermedia */
+      transform: rotate(-4deg) translateY(-50%);
+      z-index: -1;
+      box-shadow: 0 10px 30px rgba(255, 180, 130, 0.2);
+    }
+  </style> -->
 </head>
 
 <body>
@@ -37,7 +68,7 @@
   <div class="hero_area">
     <div class="bg-box">
       <!-- FONDO -->
-      <img src="./public/vendor/template/images/hero-bg.jpg" alt="">  
+      <img class="Fondo1" src="./public/img/Portada.png" alt="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -45,27 +76,28 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="./index.html">
             <span>
-              Feane
+              Pasteleria Turroncito
             </span>
           </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">Actual</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./views/menu.html">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./views/about.html">About</a>
+                <a class="nav-link" href="./views/about.html">Sobre Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./views/book.html">Book Table</a>
+                <a class="nav-link" href="./views/book.html">Reservación</a>
               </li>
             </ul>
             <div class="user_option">
@@ -73,7 +105,9 @@
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <a class="cart_link" href="#">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                  style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
                       <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -132,7 +166,7 @@
                 </button>
               </form>
               <a href="" class="order_online">
-                Order Online
+                ORDEN EN LÍNEA
               </a>
             </div>
           </div>
@@ -149,15 +183,32 @@
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
+                    <!-- <h1>
+                      Pasteleria Sabor del Alma
+                    </h1> -->
+                    <!-- <p>
                       Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
+                    </p> -->
+                    <div class="hero-text">
+                      <h1 class="titulo-banner">¡Dulces que Hipnotizan los Sentidos!</h1>
+                      <p class="lead">En <strong>Delicias del Alma</strong>, convertimos cada postre en una obra maestra
+                        comestible. Cada capa es un viaje textural donde se encuentran crujientes perfectos,
+                        cremosidades seductoras y aromas que despiertan memorias.</p>
+
+                      <div class="highlights">
+                        <p>✓ Técnicas de horneado ancestrales combinadas con vanguardia<br>
+                          ✓ Chocolate single-origin y frutas de temporada en su punto exacto<br>
+                          ✓ Balance maestro entre dulzor y profundidad de sabores</p>
+                      </div>
+
+                      <p class="cta-text">¿Listo para rendirte al placer irresistible?<br>
+                        <small>Tu paladar merece este romance dulce - nosotros ponemos el corazón</small>
+                      </p>
+                    </div>
+
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Order Now
+                        Ordena Ahora
                       </a>
                     </div>
                   </div>
@@ -170,15 +221,17 @@
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    <h1>Deconstruyendo la Nostalgia</h1>
+                    <p>Reinterpretamos tus recuerdos dulces a través de técnicas moleculares y presentaciones
+                      escultóricas que desafían lo convencional:</p>
+                    <p>✶ Macarons con corazón líquido termo-sensible
+                      <br>
+                      ✶ Soufflés con núcleo de helado criogénico
                     </p>
+
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Order Now
+                        Ordena ahora
                       </a>
                     </div>
                   </div>
@@ -191,15 +244,50 @@
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
-                    <h1>
+                    <!-- <h1>
                       Fast Food Restaurant
                     </h1>
                     <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
+                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
+                      quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos
+                      nihil ducimus libero ipsam.
+                    </p> -->
+                    <div class="hero-text">
+                      <h1 class="titulo-banner" class="parrafo_fuerte">Memoria Dulce en Cada Mordisco</h1>
+                      <p class="lead" class="parrafo_suave">
+                        En <strong>Raíces Azucaradas</strong>, rescatamos recetas ancestrales para tejer un puente entre
+                        el legado cultural y la innovación responsable. Nuestra filosofía se sustenta en:
+                      </p>
+
+                      <div class="highlights">
+                        <div class="grid-herencia">
+                          <div class="columna-tradicion">
+                            <h3>Sabiduría Ancestral</h3>
+                            <ul class="parrafo_suave">
+                              <li> Levaduras naturales de 3 generaciones</li>
+                              <li> Técnicas prehispánicas de fermentación</li>
+                              <li> Edulcorantes ancestrales (pulque, panela)</li>
+                            </ul>
+                          </div>
+
+                          <div class="columna-innovacion">
+                            <h3>Compromiso Actual</h3>
+                            <ul>
+                              <li> Cacao de comercio justo con comunidades originarias</li>
+                              <li> Zero waste: aprovechamiento integral de insumos</li>
+                              <li> Packaging comestible y biodegradable</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p class="cta-text">¿Te unes a la revolución dulce consciente?<br>
+                        <small>Donde cada postre es un acto de preservación cultural</small>
+                      </p>
+                    </div>
                     <div class="btn-box">
                       <a href="" class="btn1">
-                        Order Now
+                        Ordena Ahora
                       </a>
                     </div>
                   </div>
@@ -223,14 +311,13 @@
 
   <!-- offer section -->
 
-  <section class="offer_section layout_padding-bottom">
+  <!-- <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
       <div class="container ">
         <div class="row">
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <!-- imagen comida -->
                 <img src="./public/vendor/template/images/o1.jpg" alt="">
               </div>
               <div class="detail-box">
@@ -241,7 +328,9 @@
                   <span>20%</span> Off
                 </h6>
                 <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                    style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
                         <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -300,7 +389,6 @@
           <div class="col-md-6  ">
             <div class="box ">
               <div class="img-box">
-                <!-- imagen comida 2 -->
                 <img src="./public/vendor/template/images/o2.jpg" alt="">
               </div>
               <div class="detail-box">
@@ -311,7 +399,9 @@
                   <span>15%</span> Off
                 </h6>
                 <a href="">
-                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                    style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
                       <g>
                         <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -370,13 +460,13 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end offer section -->
 
   <!-- food section -->
 
-  <section class="food_section layout_padding-bottom">
+  <!-- <section class="food_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -398,7 +488,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu -->
                   <img src="./public/vendor/template/images/f1.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -406,14 +495,17 @@
                     Delicious Pizza
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $20
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -430,7 +522,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -475,7 +568,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- cmomida menu 2 -->
                   <img src="./public/vendor/template/images/f2.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -483,14 +575,17 @@
                     Delicious Burger
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $15
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -507,7 +602,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -552,7 +648,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu 3 -->
                   <img src="./public/vendor/template/images/f3.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -560,14 +655,17 @@
                     Delicious Pizza
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $17
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -584,7 +682,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -629,7 +728,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida imagen 4 -->
                   <img src="./public/vendor/template/images/f4.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -637,14 +735,17 @@
                     Delicious Pasta
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $18
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -661,7 +762,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -706,7 +808,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu 5 -->
                   <img src="./public/vendor/template/images/f5.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -714,14 +815,17 @@
                     French Fries
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $10
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -738,7 +842,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -783,7 +888,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu 6 -->
                   <img src="./public/vendor/template/images/f6.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -791,14 +895,17 @@
                     Delicious Pizza
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $15
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -815,7 +922,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -860,7 +968,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu 7 -->
                   <img src="./public/vendor/template/images/f7.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -868,14 +975,17 @@
                     Tasty Burger
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $12
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -892,7 +1002,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -937,7 +1048,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu 8 -->
                   <img src="./public/vendor/template/images/f8.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -945,14 +1055,17 @@
                     Tasty Burger
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $14
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -969,7 +1082,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -1014,7 +1128,6 @@
             <div class="box">
               <div>
                 <div class="img-box">
-                  <!-- comida menu 9 -->
                   <img src="./public/vendor/template/images/f9.png" alt="">
                 </div>
                 <div class="detail-box">
@@ -1022,14 +1135,17 @@
                     Delicious Pasta
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus
+                    sed eaque
                   </p>
                   <div class="options">
                     <h6>
                       $10
                     </h6>
                     <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                        style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
                           <g>
                             <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -1046,7 +1162,8 @@
                         </g>
                         <g>
                           <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                            <path
+                              d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                          c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                           </g>
                         </g>
@@ -1095,13 +1212,13 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end food section -->
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <!-- <section class="about_section layout_padding">
     <div class="container  ">
 
       <div class="row">
@@ -1130,12 +1247,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end about section -->
 
   <!-- book section -->
-  <section class="book_section layout_padding">
+  <!-- <section class="book_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -1192,7 +1309,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end book section -->
 
   <!-- client section -->
@@ -1201,7 +1318,7 @@
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
         <h2>
-          What Says Our Customers
+          ¿Qué dicen nuestros clientes?
         </h2>
       </div>
       <div class="carousel-wrap row ">
@@ -1209,15 +1326,24 @@
           <div class="item">
             <div class="box">
               <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                <!-- <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam
                 </p>
                 <h6>
                   Moana Michell
                 </h6>
                 <p>
                   magna aliqua
+                </p> -->
+
+                <p class="texto-testimonio">
+                  Desde que probé sus panes de levadura natural, no puedo comer otro. El sabor es incomparable, y sé
+                  que estoy comiendo algo hecho con amor y tradición. ¡Mis hijos también los adoran!
                 </p>
+                <div class="separador-testimonio"></div>
+                <p class="nombre-cliente">María González</p>
+                <p class="rol-cliente">Madre de familia, Cliente desde 2022</p>
               </div>
               <div class="img-box">
                 <img src="./public/vendor/template/images/client1.jpg" alt="" class="box-img">
@@ -1227,15 +1353,53 @@
           <div class="item">
             <div class="box">
               <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam
+                  </p>
+                  <h6>
+                    Mike Hamell
+                  </h6>
+                  <p>
+                    magna aliqua
+                  </p> -->
+
+                <p class="texto-testimonio">
+                  Como chef, valoro mucho la calidad de los ingredientes. Sus productos son excepcionales. El cacao de
+                  comercio justo y las técnicas ancestrales se notan en cada bocado.
                 </p>
-                <h6>
-                  Mike Hamell
-                </h6>
-                <p>
-                  magna aliqua
+                <div class="separador-testimonio"></div>
+                <p class="nombre-cliente">Carlos Mendoza</p>
+                <p class="rol-cliente">Chef Pastelero</p>
+              </div>
+              <div class="img-box">
+                <img src="./public/vendor/template/images/client2.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <!-- <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam
+                  </p>
+                  <h6>
+                    Mike Hamell
+                  </h6>
+                  <p>
+                    magna aliqua
+                  </p> -->
+
+                <p class="texto-testimonio">
+                  Lo que más me encanta es saber que estoy apoyando a comunidades originarias. Los postres son
+                  deliciosos y con propósito. ¡Eso no tiene precio!
                 </p>
+                <div class="separador-testimonio"></div>
+                <p class="nombre-cliente">Sofía Ramírez</p>
+                <p class="rol-cliente">Emprendedora Consciente</p>
               </div>
               <div class="img-box">
                 <img src="./public/vendor/template/images/client2.jpg" alt="" class="box-img">
@@ -1256,25 +1420,25 @@
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
             <h4>
-              Contact Us
+              Contactanos
             </h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Ubicacion: Quito, Ecuador, Jardin del Valle
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Llama al +593 995857667
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  josefernando60@gmail.com
                 </span>
               </a>
             </div>
@@ -1283,10 +1447,12 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Feane
+              Pasteleria Turroncito
             </a>
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              Emprendimiento dedicado a la elaboración de productos de panadería y repostería artesanal, utilizando
+              ingredientes naturales y técnicas ancestrales, con el objetivo de ofrecer sabores auténticos que conecten
+              con las raíces culturales y promuevan el bienestar.
             </p>
             <div class="footer_social">
               <a href="">
@@ -1309,10 +1475,10 @@
         </div>
         <div class="col-md-4 footer-col">
           <h4>
-            Opening Hours
+            Hora de apertura
           </h4>
           <p>
-            Everyday
+            Todos los dias
           </p>
           <p>
             10.00 Am -10.00 Pm
@@ -1321,9 +1487,9 @@
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
+          &copy; <span id="displayYear"></span> Derechos reservados para
+          <a href="https://html.design/">Plantillas gratis</a><br><br>
+          &copy; <span id="displayYear"></span>Distribuidos por
           <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
         </p>
       </div>
@@ -1334,8 +1500,9 @@
   <!-- jQery -->
   <script src="./public/vendor/template/js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
   <!-- bootstrap js -->
   <script src="./public/vendor/template/js/bootstrap.js"></script>
   <!-- owl slider -->
