@@ -35,6 +35,11 @@
 
   <link rel="stylesheet" href="./public/css/estilos.css">
 
+  <audio autoplay loop>
+  <source src="./public/song/Sonido_fondo.mp3" type="audio/mpeg">
+  </audio>
+
+
   <!-- <style>
     .Fondo1 {
       margin-top: 100px;
@@ -1342,11 +1347,11 @@
                   que estoy comiendo algo hecho con amor y tradición. ¡Mis hijos también los adoran!
                 </p>
                 <div class="separador-testimonio"></div>
-                <p class="nombre-cliente">María González</p>
+                <p class="nombre-cliente">Lizeth Diaz</p>
                 <p class="rol-cliente">Madre de familia, Cliente desde 2022</p>
               </div>
               <div class="img-box">
-                <img src="./public/vendor/template/images/client1.jpg" alt="" class="box-img">
+                <img src="./public/img/cliente3.png" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -1370,11 +1375,11 @@
                   comercio justo y las técnicas ancestrales se notan en cada bocado.
                 </p>
                 <div class="separador-testimonio"></div>
-                <p class="nombre-cliente">Carlos Mendoza</p>
+                <p class="nombre-cliente">Adonny Calero</p>
                 <p class="rol-cliente">Chef Pastelero</p>
               </div>
               <div class="img-box">
-                <img src="./public/vendor/template/images/client2.jpg" alt="" class="box-img">
+                <img src="./public/img/cliente2.png" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -1402,7 +1407,7 @@
                 <p class="rol-cliente">Emprendedora Consciente</p>
               </div>
               <div class="img-box">
-                <img src="./public/vendor/template/images/client2.jpg" alt="" class="box-img">
+                <img src="./public/img/cliente1.png" alt="" class="box-img">
               </div>
             </div>
           </div>
@@ -1519,6 +1524,10 @@
   </script>
   <!-- End Google Map -->
 
+  <script>
+  const audio = document.querySelector('audio');
+    audio.volume = 0.05; // Volumen al 30%
+  </script>
 </body>
 
 </html>

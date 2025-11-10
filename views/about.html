@@ -34,6 +34,188 @@
   <link href="../public/vendor/template/css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="../public/css/estilos.css">
 
+  <!-- Estilos del Modal -->
+  <style>
+    /* Modal */
+    .modal-sabor {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      animation: fadeIn 0.3s ease-in;
+    }
+
+
+
+    .modal-content-sabor {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 0;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 900px;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      animation: slideDown 0.4s ease-out;
+    }
+
+ 
+
+    .modal-header-sabor {
+      background: linear-gradient(135deg, #d4a574 0%, #c9945a 100%);
+      color: white;
+      padding: 30px 20px;
+      border-radius: 15px 15px 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header-sabor h2 {
+      font-size: 28px;
+      font-style: italic;
+      margin: 0;
+    }
+
+    .close-btn-sabor {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .close-btn-sabor:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .modal-body-sabor {
+      padding: 30px;
+    }
+
+    .section-sabor {
+      margin-bottom: 35px;
+      text-align: left;
+    }
+
+    .section-sabor h3 {
+      color: #d4a574;
+      font-size: 22px;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #d4a574;
+      padding-bottom: 10px;
+    }
+
+    .section-sabor p {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .section-sabor ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section-sabor ul li {
+      color: #555;
+      margin-bottom: 8px;
+      padding-left: 25px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .section-sabor ul li:before {
+      content: "✓";
+      color: #d4a574;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    .galeria-sabor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .galeria-item-sabor {
+      background: linear-gradient(135deg, #d4a574 0%, #c9945a 100%);
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .galeria-item-sabor:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonios-sabor {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .testimonio-sabor {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #d4a574;
+    }
+
+    .testimonio-autor-sabor {
+      font-weight: bold;
+      color: #d4a574;
+      margin-top: 10px;
+    }
+
+    .estrellas-sabor {
+      color: #d4a574;
+      margin-bottom: 10px;
+    }
+
+    .btn-contacto-sabor {
+      background: linear-gradient(135deg, #d4a574 0%, #c9945a 100%);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: transform 0.3s;
+      margin-top: 10px;
+    }
+
+    .btn-contacto-sabor:hover {
+      transform: translateY(-2px);
+    }
+
+    
+  </style>
+
+    <audio autoplay loop>
+  <source src="../public/song/Dulce Sitio.mp3" type="audio/mpeg">
+  </audio>
+
 </head>
 
 <body class="sub_page">
@@ -163,15 +345,9 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Somos Sabor del Alma
+                Somos Pasteleria Turroncito
               </h2>
             </div>
-            <!-- <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p> -->
 
             <p>
               Somos una Pasteleria artesanal con más de 10 años de experiencia en la elaboración de productos de calidad.
@@ -182,7 +358,7 @@
               Desde nuestro horno a tu mesa, cada pieza es hecha con amor y dedicación.
             </p>
 
-            <a href="">
+            <a href="#" onclick="abrirModalSabor(); return false;" style="cursor: pointer;">
               Leer más
             </a>
           </div>
@@ -192,6 +368,95 @@
   </section>
 
   <!-- end about section -->
+
+<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #000;">
+  <video style="width: 80%; max-width: 800px; height: auto;" controls autoplay loop muted>
+    <source src="../public/video/publicidad.mp4" type="video/mp4">
+  </video>
+</div>
+
+  <div id="miModalSabor" class="modal-sabor">
+    <div class="modal-content-sabor">
+      <div class="modal-header-sabor">
+        <h2>Pasteleria Turroncito</h2>
+        <button class="close-btn-sabor" onclick="cerrarModalSabor()">&times;</button>
+      </div>
+
+      <div class="modal-body-sabor">
+        <!-- Nuestra Historia -->
+        <div class="section-sabor">
+          <h3> Nuestra Historia</h3>
+          <p>Hace más de 10 años, nació <strong>Pasteleria Turroncito</strong> con un sueño simple pero apasionado: crear postres que no solo deleitaran el paladar, sino que también tocaran el corazón de cada cliente.</p>
+          <p>Lo que comenzó como un pequeño horno familiar se ha convertido en una pastelería reconocida por su compromiso con la calidad y la tradición. Cada día, nuestro equipo se dedica a perfeccionar recetas ancestrales y crear nuevas delicias que sorprendan a nuestros clientes.</p>
+          <p><strong>Nuestros Valores:</strong></p>
+          <ul>
+            <li>Calidad Premium en cada producto</li>
+            <li>Ingredientes seleccionados y naturales</li>
+            <li>Higiene e inocuidad alimentaria</li>
+            <li>Pasión y dedicación en cada creación</li>
+            <li>Atención personalizada al cliente</li>
+          </ul>
+        </div>
+
+        <!-- Galería de Productos -->
+        <div class="section-sabor">
+          <h3> Nuestros Productos</h3>
+          <p>Ofrecemos una variedad de deliciosos postres elaborados diariamente:</p>
+          <div class="galeria-sabor">
+            <div class="galeria-item-sabor"> Pasteles Personalizados</div>
+            <div class="galeria-item-sabor"> Cupcakes Artesanales</div>
+            <div class="galeria-item-sabor"> Galletas Gourmet</div>
+            <div class="galeria-item-sabor"> Croissants Franceses</div>
+            <div class="galeria-item-sabor"> Donuts Especiales</div>
+            <div class="galeria-item-sabor"> Tartas de Frutas</div>
+          </div>
+        </div>
+
+        <!-- Proceso de Elaboración -->
+        <div class="section-sabor">
+          <h3> Nuestro Proceso</h3>
+          <p>Cada producto es elaborado con cuidado y precisión, siguiendo estándares internacionales de calidad:</p>
+          <ul>
+            <li><strong>Selección de Ingredientes:</strong> Utilizamos solo ingredientes premium y naturales</li>
+            <li><strong>Preparación Artesanal:</strong> Nuestros maestros pasteleros preparan cada mezcla a mano</li>
+            <li><strong>Horneado Controlado:</strong> Temperatura y tiempo perfectos para cada producto</li>
+            <li><strong>Control de Calidad:</strong> Inspección rigurosa antes de entregar</li>
+            <li><strong>Empaque Cuidadoso:</strong> Presentación hermosa y protección del producto</li>
+          </ul>
+        </div>
+
+        <!-- Equipo -->
+        <div class="section-sabor">
+          <h3> Nuestro Equipo</h3>
+          <p>Contamos con maestros pasteleros con más de 15 años de experiencia en la industria. Cada miembro del equipo es apasionado por su oficio y se dedica a crear experiencias memorables a través de nuestros postres.</p>
+          <p>Nuestro equipo está en constante capacitación para mantenerse actualizado con las últimas tendencias en repostería internacional.</p>
+        </div>
+
+        <!-- Servicios -->
+        <div class="section-sabor">
+          <h3> Nuestros Servicios</h3>
+          <ul>
+            <li><strong>Pedidos Personalizados:</strong> Diseñamos postres según tus especificaciones</li>
+            <li><strong>Catering para Eventos:</strong> Bodas, cumpleaños, eventos corporativos</li>
+            <li><strong>Entregas a Domicilio:</strong> Entrega rápida y segura en tu ubicación</li>
+            <li><strong>Talleres y Clases:</strong> Aprende a hacer postres con nuestros maestros</li>
+            <li><strong>Asesoría Gastronómica:</strong> Recomendaciones personalizadas</li>
+          </ul>
+        </div>
+
+
+        <!-- Contacto -->
+        <div class="section-sabor">
+          <h3> Contacto</h3>
+          <p><strong>Teléfono:</strong> +593 995857667</p>
+          <p><strong>Email:</strong> josefernando60@gmail.com</p>
+          <p><strong>Ubicación:</strong> Jardin del Valle, Quito, Ecuador</p>
+          <p><strong>Horario:</strong> Todos los días, 10:00 AM - 10:00 PM</p>
+          <button class="btn-contacto-sabor" onclick="alert('¡Gracias por tu interés! Nos contactaremos pronto.')">Solicitar Información</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -227,7 +492,7 @@
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
             <a href="" class="footer-logo">
-              Sabor del Alma
+              Pasteleria Turroncito
             </a>
             <p>
               Emprendimiento dedicado a la elaboración de productos de panadería y repostería artesanal, utilizando
@@ -299,6 +564,27 @@
   </script>
   <!-- End Google Map -->
 
+  <script>
+    const audio = document.querySelector('audio');
+    audio.volume = 0.05; // Volumen al 5%
+
+    // Funciones del Modal
+    function abrirModalSabor() {
+      document.getElementById("miModalSabor").style.display = "block";
+    }
+
+    function cerrarModalSabor() {
+      document.getElementById("miModalSabor").style.display = "none";
+    }
+
+    // Cerrar modal al hacer clic fuera de él
+    window.onclick = function(event) {
+      var modal = document.getElementById("miModalSabor");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>

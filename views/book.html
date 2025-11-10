@@ -32,6 +32,10 @@
 
   <link rel="stylesheet" href="../public/css/estilos.css">
 
+    <audio autoplay loop>
+  <source src="../public/song/Sonido_fondo.mp3" type="audio/mpeg">
+  </audio>
+
 </head>
 
 <body class="sub_page">
@@ -159,7 +163,7 @@
                 <input type="text" class="form-control" placeholder="Tu nombre" />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Número de telefono" />
+                <input type="text" class="form-control" placeholder="Número de telefono ejemplo: 0123456789" pattern="[0]{1}[0-9]{9}" />
               </div>
               <div>
                 <input type="email" class="form-control" placeholder="Correo" />
@@ -351,6 +355,11 @@ function initMap() {
 // Cargar el mapa cuando la página carga
 window.addEventListener("load", initMap);
 </script>
+
+<script>
+  const audio = document.querySelector('audio');
+    audio.volume = 0.05; // Volumen al 30%
+  </script>
 </body>
 
 </html>
