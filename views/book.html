@@ -194,7 +194,7 @@
                 <input type="date" class="form-control">
               </div>
               <div class="btn_box">
-                <button>
+                <button onclick="reservacionExitosa()" style=" border: none; cursor: pointer; transition: opacity 0.5s ease-in-out;">
                   Reserva ahora
                 </button>
               </div>
@@ -294,7 +294,9 @@
     </div>
   </footer>
   <!-- footer section -->
-
+  <div id="notificacion" style="display: none; position: fixed; top: 20px; right: 20px; background-color: #4CAF50 ; color: white; padding: 20px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000; animation: deslizar 0.3s ease-in-out;">
+    ✓ Reservacion exitosa
+  </div>
   <!-- jQery -->
   <script src="../public/vendor/template/js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
@@ -352,6 +354,7 @@ function initMap() {
   });
 }
 
+
 // Cargar el mapa cuando la página carga
 window.addEventListener("load", initMap);
 </script>
@@ -360,6 +363,23 @@ window.addEventListener("load", initMap);
   const audio = document.querySelector('audio');
     audio.volume = 0.05; // Volumen al 30%
   </script>
+
+
+  <script>
+  function reservacionExitosa() {
+    var notif = document.getElementById("notificacion");
+    notif.style.display = "block";
+    notif.style.opacity = "1";
+    
+    setTimeout(function() {
+      notif.style.display = "0";
+      setTimeout(function() {
+        notif.style.display = "none";
+      }, 500);
+    }, 1000000000000000000000000000000000000000000000000000);
+  }
+</script>
+
 </body>
 
 </html>
